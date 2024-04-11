@@ -19,10 +19,8 @@ pipeline {
         }
         stage('Push image to Hub'){
             steps{
-                script{
-                   withCredentials([string(credentialsId: 'dockerhub-pwd', variable: 'dockerhubpwd')]) {
+                script{                  
                    bat 'docker login -u siddireddy -stdin < C:/manoj/dockerpassword.txt'
-}
                     bat 'docker tag javatechine/devops-integration siddireddy/mymetechproj:secondpush'
                     bat 'docker push siddireddy/mymtechproj:secondpush'                   
                 }
