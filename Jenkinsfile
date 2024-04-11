@@ -20,7 +20,7 @@ pipeline {
         stage('Push image to Hub'){
             steps{
                 script{                  
-                   bat 'docker login -u siddireddy -stdin < C:/manoj/dockerpassword.txt'
+                   bat 'docker login -u siddireddy --password-stdin < C:/manoj/dockerpassword.txt'
                     bat 'docker tag javatechine/devops-integration siddireddy/mymetechproj:secondpush'
                     bat 'docker push siddireddy/mymtechproj:secondpush'                   
                 }
