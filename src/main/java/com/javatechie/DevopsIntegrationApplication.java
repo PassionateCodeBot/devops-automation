@@ -15,11 +15,11 @@ public class DevopsIntegrationApplication {
 	}
 
 	public static void main(String[] args) {
-		SpringApplication.run(DevopsIntegrationApplication.class, "DevOps Demo Project");
+		SpringApplication.run(DevopsIntegrationApplication.class, args);
 
 		//SpringApplication application = new SpringApplication(MyApplication.class);
-  // Customize application settings here
-  //application.run(args);
+  		// Customize application settings here
+  		//application.run(args);
 	}
 
 }
