@@ -10,7 +10,7 @@ spec:
   template:
     metadata:
       labels:
-        app: spring-boot-k8s
+        app: testpod
     spec:
       containers:
         - name: spring-boot-k8s
