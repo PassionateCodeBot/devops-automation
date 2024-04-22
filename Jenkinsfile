@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{                  
                    bat 'docker login -u siddireddy --password-stdin < C:/manoj/dockerpassword.txt'
-                    bat 'docker tag passionatecodebot/devops-integration siddireddy/mymtechproj:secondpush'                                     
+                    bat 'docker tag passionatecodebot/devops-integration                                     
                 }
             }
         }
