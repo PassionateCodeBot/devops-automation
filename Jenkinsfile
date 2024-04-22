@@ -13,7 +13,7 @@ pipeline {
         stage('Build docker image'){
             steps{
                 script{
-                    bat 'docker build -t PassionateCodeBot/devops-integration .'
+                    bat 'docker build -t passionatecodebot/devops-integration .'
                 }
             }
         }
@@ -21,7 +21,7 @@ pipeline {
             steps{
                 script{                  
                    bat 'docker login -u siddireddy --password-stdin < C:/manoj/dockerpassword.txt'
-                    bat 'docker tag PassionateCodeBot/devops-integration siddireddy/mymtechproj:secondpush'
+                    bat 'docker tag passionatecodebot/devops-integration siddireddy/mymtechproj:secondpush'
                     bat 'docker push siddireddy/mymtechproj:secondpush'                   
                 }
             }
