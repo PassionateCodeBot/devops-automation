@@ -9,9 +9,9 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class DevopsIntegrationApplication {
 
-	@GetMapping
-	public String message(){
-		return "welcome to passionatecodebot";
+	@GetMapping("/message")
+	public String displayMessage(){
+		return "welcome to kubernetes";
 	}
 
 	public static void main(String[] args) {
